@@ -1,0 +1,321 @@
+header{
+    font-size:1em;
+}
+/* navigation section */
+header nav{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 15px;
+ font-size:1em;
+
+}
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+}
+header nav .nav-right a{
+    color:#444;
+    padding:5px 10px;
+    margin: 0px 5px;
+    font-size:1.1em
+}
+header nav .nav-left .register-login-btn{
+    border:1px solid #444;
+    /* padding:5px 8px; */
+    border-radius:5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+header nav .nav-left .register-login-btn i{
+    margin:7px;
+    padding:7px;
+}
+header nav .nav-left .register-login-btn a{
+    color:#444;
+    /* padding:0px 10px; */
+    font-size:.9em;
+    padding:7px 10px;
+}
+/* slider section */
+.slider{
+    position: relative;
+    font-size: 1em;
+}
+.slider .slides .item{
+    animation-name: fadeIn ;
+    animation-duration:1000ms;
+    position: relative;
+    display:none
+}
+.slider .slides .active{
+    display: block;
+}
+.slider .slides .item img{
+    width: 100%;
+}
+.slider .slides .item span{
+    animation-name: shakeX ;
+    animation-duration:1800ms;
+    position: absolute;
+    top:100px;
+    right:40px;
+    z-index: 4;
+    font-size:1.2em;
+    color:#444;
+}
+
+.slider .buttons{
+    position:absolute;
+    bottom: 30px;
+    left:40px;
+    display: block;
+    z-index: 1;
+    color:rgba(255,255,255,1);
+}
+.slider .buttons i{
+    margin-right:5px;
+    color:rgba(255,255,255,1);
+    cursor:pointer;
+}
+.slider .buttons i:hover{
+    color:rgba(255,255,255,0.4);
+}
+/* product section */
+.product-sec-new{
+    padding:20px 10px;
+    font-size:1em;
+
+}
+ .shopping-card{
+    text-align:center;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,.2);
+    margin: 10px 15px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.shopping-card .img-sec{
+    position: relative;
+}
+.shopping-card .img-sec img{
+    width: 60%;
+}
+.shopping-card .img-sec .hot-offer{
+    background-color:red;
+    color:white;
+    padding:2px 4px;
+    border-radius: 5px;
+    position:absolute; 
+    right:5px;
+    top:10px;
+    font-size:.8em
+}
+.shopping-card .img-sec .stars{
+    position: absolute;
+    left:10px;
+    top: 10px;
+    color:yellow;
+}
+
+.shopping-card .title{
+    color:#333;
+    margin:15px;
+}
+.shopping-card .buttons{
+    display:flex;
+    height: 60px;
+    align-items:center;
+    box-sizing: border-box;
+    justify-content:space-between;
+    padding:5px 15px;
+}
+.shopping-card .buttons .right .price{
+    color:#666;
+    font-weight: bold;
+ }
+.shopping-card .buttons .left {
+    display:flex;
+    justify-content:center;
+}
+.shopping-card .buttons .left .extend-btn {
+    display:flex;
+    box-sizing: border-box;
+    margin-left: 5px;
+    align-items:center;
+    justify-content:space-between;
+    color:white;
+    background-color: #FF91A4;
+    width: 40px;
+    padding:7px 10px;
+    border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: .75s;
+    text-align: center;
+}
+
+.shopping-card .buttons .left .extend-btn:hover {
+    width:100px;
+}
+.shopping-card .buttons .left .extend-btn .b-text{
+    display:none;
+}
+.shopping-card .buttons .left .extend-btn:hover .b-text{
+    display:block;
+}
+.shopping-card .buttons .left .extend-btn .b-icon{
+    color:white;
+}
+.shopping-card .buttons .left .extend-btn a{
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+/* super offer section */
+
+.supper-offer-section{
+    padding:20px;
+    padding:1em;
+
+}
+.supper-offer-section .super-offer-box{
+    text-align:center;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,.2);
+    border-radius: 5px;
+    margin:0px 10px    
+
+}
+.super-offer-box .super-offer-box-title{
+    background-color:#e74c3c;
+    color:white;
+    padding:8px 30px;
+    display:inline-block;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.super-offer-box .body .image-container{
+    text-align: center;
+    padding:30px;
+}
+.super-offer-box .body .image-container img{
+    width: 100%;
+}
+.super-offer-box .body .spesification{
+    padding:30px 5px 
+}
+.super-offer-box .body .spesification .price-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.super-offer-box .body .spesification .price-row  .price{
+    margin-left: 50px;
+    color:rgba(0,0,0,0.8);
+    font-size:1.2em;
+}
+.super-offer-box .body .spesification .price-row .off{
+    color:white;
+    background-color:#e74c3c;
+    border-radius: 25px;
+    padding:5px 20px;
+
+}
+.super-offer-box .body .spesification .title{
+    margin:40px 0;
+    font-weight: bold;
+    color:#444;
+    font-size:1.4em;
+}
+.super-offer-box .body .spesification .counter-down{
+    border-top:1px solid rgba(0,0,0,.4);
+     margin:10px 40px;
+     padding-top:20px ;
+     font-weight: bold;
+     color:#666;
+     font:1.5rem
+}
+.super-offer-box .body .spesification .remaining-time{
+    color:#777;
+    font-size: .8em;
+}
+
+.banner{
+    text-align:center;
+    padding: 0px 5px
+}
+.banner img{
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,.2);
+    width:80%;
+}
+img{
+    width:100%;
+}
+.owl-stage-outer{
+    direction:ltr;
+}
+.dragable-list img{
+    width: 70% !important;
+    margin:auto;
+}
+.dragable-list .title{
+    padding:0 20px;
+    padding-bottom: 20px;
+}
+.dragable-list .title span{
+    font-size:1.2em;
+    color:#444;
+    border-bottom:1px solid red;
+}
+
+/* footer   */
+footer{
+    background-color: #636e63;
+    font-size:1em;
+
+}
+footer .right{
+    padding:40px
+}
+footer .right .title{
+    padding:10px 0;
+    color:white;
+    font-size: 1.2em;
+}
+footer .right .des{
+    color:rgba(255,255,255,.7);
+    font-size: .9em;
+    line-height: 1.9em;
+}
+footer .left{
+    padding:40px;
+}
+footer .left .title{
+   color: white;
+    padding:10px 0;
+    font-size:1.2em;
+    text-align:center;
+}
+footer .left .socials{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:    space-around;
+    padding:20px 20px;
+
+}
+
+footer .left .socials a {
+    color:white;
+    font-size:1.4em
+}
+footer .bottom{
+background-color: #2de456;
+text-align: center;
+padding:15px;
+color: rgba(255,255,255,.8);
+}
